@@ -384,16 +384,12 @@ form .btn:hover{
   z-index: 5;
 }
 
+
 .btnhero{
   bottom:30%;
   left: 50%;
   margin: -164px 0 0 -56px; 
   border: 1px solid #eee; 
-}
-
-.btnhero:visited {
-  background-color: #eee;
-  text-decoration: none;
   color: #eee;
 }
 
@@ -404,6 +400,12 @@ form .btn:hover{
   color: black;
   border: 2px solid #eee;
   box-shadow: 1px 1.5px 2px black;
+}
+
+.btnhero:visited {
+  background-color: #eee;
+  text-decoration: none;
+  color: #eee;
 }
 
 .line{
