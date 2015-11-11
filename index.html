@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="pt-br, en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Vera Gerlack - Arquiteta</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google's JosefinSans -->
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <!-- Google's source code-->
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+    <!-- Open Icon -->
+    <link href="css/open-iconic-bootstrap.css" rel="stylesheet">
+    <!--my CSS-->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body ng-app="arquiteturaApp">
+
+  <!-- MODALS PORTFOLIO -->
+
+  <!-- NAVBAR - appears at second page only -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topnavbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="#"><p>| Vera </p><p>| Gerlack </p></a> -->
+      <a class="navbar-brand" href="#"><img alt="Brand" src="img/Logo.png"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="topnavbar">
+      <ul class="nav navbar-nav navbar-right ">
+        <li class="serv"><a class="scroll" href="#servicos">SERVIÇOS</a></li>
+        <li class="port"><a class="scroll" href="#portfolio" >PORTFÓLIO</a></li>
+        <li class="about"><a class="scroll" href="#sobre">SOBRE</a></li>
+        <li class="contact"><a class="scroll" href="#contato">CONTATO</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- HERO -->
+  <div class="jumbotron" id="hero">
+    <DIV class="jumboOverlay"></DIV>  
+    <div class="container hero">
+      <h1>Arquiteta & Urbanista </h1>     
+      <a class="arrow-scroll scroll arrow-jump" href="#servicos" >
+        <span class="oi oi-chevron-bottom animated bounceInDown" id="animated-example"></span>
+      </a>
+      <a class="myBtn btnhero scroll" href="#servicos" role="button">Serviços</a>
+    </div>
+  </div>
+
+  <!-- SERVICOS -->
+  <section class="servicos" id="servicos" ng-controller="mediaController as media">
+   <div class="container">
+    <h1 class="thinH1">Serviços</h1>
+    <div class="line"></div>
+    <div class="row">
+      <div class="col-md-4 col-xs-6" ng-repeat="item in media.servicos">
+        <img class="img-responsive img-circle" width="200" height="200" ng-src="{{item.src}}">
+        <h3>{{item.h3}}</h3>
+        <p>{{item.p}}</p>  
+      </div>
+    </div>
+   </div>    
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio" ng-controller="mediaController as media">
+    <div class="container">
+      <h1 class="thinH1">Portfólio</h1>
+      <div class="line"></div>
+      <div class="container">
+        <div class="emConstrucao"><span class="oi oi-wrench" aria-hidden="true"></span>Em construção...</div>
+          <!--         <div class="row">
+          <div class="col-md-4 col-xs-6 portfolioColumn" ng-repeat="item in media.portfolio">
+          <a href="#"><img class="img-responsive" ng-src="{{item.src}}" alt="{{item.desc}}" width="400" height="300"></a>
+          </div>
+        </div> -->
+      </div>  
+    </div>
+  </section>  
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <h1 class="thinH1">Sobre</h1>
+      <div class="line"></div>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-circle" src="img/sobre.jpeg"/>
+        </div>
+        <div class="col-md-4 textoSobre">
+          <h2>Vera Lúcia Gerlack</h2>
+          <p>Formada em Arquitetura e Urbanismo pela ULBRA / Torres-RS. Vera também tem curso de Design de Interioires. Apaixonada pela sua família e trabalho, aprecia tomar um bom café e curtir seu neto nas horas vagas.</p>
+          <p>CRAU-RS xxxx</p>
+        </div>
+      </div>  
+    </div>
+  </section> 
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <h1 class="thinH1">Contato</h1>
+      <div class="line"></div>
+      <form>
+        <div class="form-group">
+          <label for="NomeCliente">Nome</label>
+          <input type="text" class="form-control" id="NomeCliente" placeholder="Nome">
+        </div>  
+        <div class="form-group">
+          <label for="EmailCliente">Email</label>
+          <input type="email" class="form-control" id="EmailCliente" placeholder="Email">
+        </div>  
+        <div class="form-group">
+          <label for="MensagemCliente">Mensagem</label>
+          <textarea class="form-control" id="MensagemCliente"rows="3"></textarea>
+        </div>  
+        <button type="submit" class="btn btn-default">Enviar</button>
+      </form>  
+    </div>
+  </section>  
+  
+  <!-- FOOTER -->
+  <section class="footer">
+    <div class="container-fluid page-footer">                
+          <div class ="col-md-4">
+            <a href="#hero" class="scroll"><span class="oi oi-home" title="icon name" aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class ="col-md-4"><p>Todos os direitos reservados.</p></div>
+          <div class ="col-md-4"><p><span class="by">Desenvolvido por </span> <span class="me">| Matheus<br> | Gerlack</span></p></div>     
+      </div>
+  </section> 
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <script src="js/app.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

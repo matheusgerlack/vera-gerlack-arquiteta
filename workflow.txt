@@ -1,0 +1,67 @@
+andamento
+AJUSTAR:
+-colocar novas fotos para portfolio e sobre
+-fazer o carousel do portfolio (fazer para pqno e copiar)
+-jquery hovers
+eras isso...
+___________________________________
+
+
+___servicos
+
+-projeto residencial (open icon: 'home')
+-execução de obra (open icon: 'people')
+-design de interiores (open icon: 'brush')
+	-projeção de mobiliário
+	-execução
+	-acessoramento
+-paisagismo (open icon: 'image')
+-regularização residencial (open icon: 'circle-check')
+-reformas (open icon: 'wrench')
+-ppci (open icon: 'fire')
+
+
+----
+MEDIA QUERIES BUTTON
+
+>MOBILE
+
+.myBtn {
+  position: absolute;
+  bottom:35%;
+  left: 40%;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 1px;
+
+}
+
+.hero h1{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  color: black;
+}
+
+---
+COLORS
+black-grey: #101212
+grey : #615556
+red: #CD1810
+
