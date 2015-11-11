@@ -195,9 +195,21 @@ color: black;
 
 .servicos p{
   color: #eee;
-  font-size: 18px;
-  padding-bottom: 20px;
+  font-size: 20px;
 }
+
+.servicos .col-md-4:nth-child(3), .servicos .col-md-4:nth-child(2){
+  padding-bottom: 10px;
+}
+
+.servicos .col-md-4:nth-child(4){
+  padding-bottom:13px;
+}
+
+.servicos .col-md-4:nth-child(6){
+  padding-bottom: 30px;
+}
+
 
 .port-img-desc{
   position: absolute;
@@ -207,16 +219,6 @@ color: black;
   background-color: rgb(255, 255, 102);
   opacity: 0.95;
   border-radius: 2px;
-}
-
-.port-img-desc h3{
-    color:rgb(255, 51, 204);
-    padding-left: 8px;
-    padding-bottom: 2px;
-}
-
-.port-img:hover{
-  opacity: 0.85;
 }
 
 .servicos .row{
@@ -269,7 +271,7 @@ color: black;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 3px solid #22A4B8;
+  border: 3px solid #eee;
 }
 
 .textoSobre h2{
